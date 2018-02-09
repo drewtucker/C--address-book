@@ -15,6 +15,41 @@ namespace AddressBook.Models
       _address = address;
     }
 
-    
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public void SetName(string newName)
+    {
+      _name = newName;
+    }
+
+    public int GetPhoneNumber()
+    {
+      return _phoneNumber;
+    }
+
+    public void SetPhoneNumber(int newPhoneNumber)
+    {
+      _phoneNumber = newPhoneNumber;
+    }
+
+    public Address GetAddress()
+    {
+      return _address;
+    }
+
+    public void SaveContact()
+    {
+      _contactInstances.Add(this);
+    }
+
+    public static List<Contact> AllContacts()
+    {
+      return _contactInstances;
+    }
+
+
   }
 }
