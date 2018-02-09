@@ -50,6 +50,11 @@ namespace AddressBook.Models
       return _contactInstances;
     }
 
+    public static void ClearAll()
+    {
+      _contactInstances.Clear();
+    }
+
 
   }
 }

@@ -6,15 +6,15 @@
     <title>New Contact</title>
   </head>
   <body>
-    <h1>Enter the Contact details:</h1>
-    <form action='/' method="post">
+    <h1>Enter Contact details:</h1>
+    <form action='/contacts' method="post">
       <div class='form-group'>
         <label for='contactName'>Enter name:</label>
         <input id='contactName' name='contactName' class='form-control' type='text'>
       </div>
       <div class='form-group'>
         <label for='contactNumber'>Enter phone number:</label>
-        <input id='contactNumber' name='contactNumber' class='form-control' type='text'>
+        <input id='contactNumber' name='contactNumber' class='form-control' placeholder="Do not include ' - ' "  type='text'>
       </div>
       <h1>Enter Contact's Address:</h1>
       <div class='form-group'>

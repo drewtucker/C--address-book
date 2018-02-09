@@ -10,16 +10,21 @@
     <ul>
       @foreach(var Contact in Model)
       {
-        <li><strong>@Contact.GetName()</strong></li>
+        <h3><strong>@Contact.GetName()</strong></h3>
+        <h5><strong>Phone #:</strong> @Contact.GetPhoneNumber()</h5>
         <br>
-        <li><strong>Phone #:</strong> @Contact.GetPhoneNumber()</li>
-        <h3>Address:</h3>
+        <h4><strong>Address:</strong></h4>
         <li><strong>Street:</strong> @Contact.GetAddress().GetStreet()</li>
         <li><strong>City:</strong> @Contact.GetAddress().GetCity()</li>
         <li><strong>State:</strong> @Contact.GetAddress().GetState()</li>
         <li><strong>Zip Code:</strong> @Contact.GetAddress().GetZipCode()</li>
+        <br>
+        <p>_______________</p>
       }
     </ul>
     <a href="/contacts/new">Add a new Contact:</a>
+    <form action="/contacts/delete" method="post">
+    <button type="submit" name="button">Clear All Contacts</button>
+    </form>
   </body>
 </html>
