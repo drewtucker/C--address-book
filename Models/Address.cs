@@ -21,7 +21,7 @@ namespace AddressBook.Models
       return _street;
     }
 
-    public void SetStreet()
+    public void SetStreet(string street)
     {
       _street = street;
     }
@@ -31,7 +31,7 @@ namespace AddressBook.Models
       return _city;
     }
 
-    public void SetCity()
+    public void SetCity(string city)
     {
       _city = city;
     }
@@ -41,7 +41,7 @@ namespace AddressBook.Models
       return _state;
     }
 
-    public void SetState()
+    public void SetState(string state)
     {
       _state = state;
     }
@@ -51,7 +51,7 @@ namespace AddressBook.Models
       return _zipCode;
     }
 
-    public void SetZipCode()
+    public void SetZipCode(int zipCode)
     {
       _zipCode = zipCode;
     }
