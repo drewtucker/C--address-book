@@ -1,4 +1,3 @@
-
 body {
   background-color: blue;
   color: blue;
@@ -11,5 +10,5 @@ div#Jumbotron {
 
 #entryForm{
   float: left;
-  background-color:
+  background-color: blue;
 }

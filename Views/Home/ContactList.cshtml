@@ -7,7 +7,12 @@
     <title>Contact List</title>
   </head>
   <body>
-    
+    <div class="container">
+
+    <div class="jumbotron">
+      <h1><strong>Add</strong><em>Book</em><h3>The Free Contact Organizer</h3></h1>
+    </div>
+
     <h1>Contacts:</h1>
     <ul>
       @foreach(var Contact in Model)
@@ -25,8 +30,10 @@
       }
     </ul>
     <a href="/contacts/new">Add a new Contact:</a>
+    <br>
     <form action="/contacts/delete" method="post">
     <button type="submit" name="button">Clear All Contacts</button>
     </form>
+  </div>
   </body>
 </html>
