@@ -1,9 +1,9 @@
 body {
-  background-color: blue;
+
   color: blue;
 }
 
-div#Jumbotron {
+.jumbotron {
   background-color: blue;
   color: blue;
 }
